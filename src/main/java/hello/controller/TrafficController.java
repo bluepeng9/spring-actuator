@@ -47,4 +47,10 @@ public class TrafficController {
         //conn.close(); 커넥션을 닫지 않는다.
         return "ok";
     }
+
+    @GetMapping("/error-log")
+    public String errorLog() {
+        log.error("error log");
+        return "error";
+    }
 }
