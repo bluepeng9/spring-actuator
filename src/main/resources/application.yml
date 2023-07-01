@@ -20,3 +20,6 @@ info:
   app:
     name: hello-actuator
     company: y
+logging:
+  level:
+    hello.controller: debug
